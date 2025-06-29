@@ -9,16 +9,11 @@ The Twitter Backend Project is an API built with Node.js and MySQL, designed to 
 
 ## ✅ Prerequisites
 
-* *   Node.js
-*     
+* *   Java, SpringBoot
 * *   Git
-*     
 * *   MySQL
-*     
 * *   DB Visualization tools (Sequel Ace, MySQL Workbench, phpMyAdmin)
-*     
 * *   Postman
-*     
 
 * * *
 
@@ -27,13 +22,9 @@ The Twitter Backend Project is an API built with Node.js and MySQL, designed to 
 ### 1\. User Authentication and Authorization
 
 * *   **User Registration**: `POST /users`
-*     
 * *   **User Login**: `POST /users/login`
-*     
 * *   **JWT Token-Based Security**
-*     
 * *   **Password Recovery (optional)**
-*     
 
 ### 2\. User Profile Management
 
