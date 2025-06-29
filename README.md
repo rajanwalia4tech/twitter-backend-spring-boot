@@ -32,7 +32,7 @@ The Twitter Backend Project is an API built with Node.js and MySQL, designed to 
 *    **Edit Profile**: `PATCH /users` 
 *    **Follow/Unfollow**: `PUT` / `DELETE /users/{userid}/follow`
 *    **View Followers / Following**: `GET /users/{userid}/followers`, `GET /users/{userid}/followees`   
-* *   **Update Profile Picture**: `PATCH /users/profile-picture` 
+*    **Update Profile Picture**: `PATCH /users/profile-picture` 
 
 ### 3\. Tweet Management
 
