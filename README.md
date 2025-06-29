@@ -9,11 +9,11 @@ The Twitter Backend Project is an API built with Node.js and MySQL, designed to 
 
 ## ✅ Prerequisites
 
-* *   Java, SpringBoot
-* *   Git
-* *   MySQL
-* *   DB Visualization tools (Sequel Ace, MySQL Workbench, phpMyAdmin)
-* *   Postman
+*    Java, SpringBoot
+*    Git
+*    MySQL
+*    DB Visualization tools (Sequel Ace, MySQL Workbench, phpMyAdmin)
+*    Postman
 
 * * *
 
@@ -21,47 +21,33 @@ The Twitter Backend Project is an API built with Node.js and MySQL, designed to 
 
 ### 1\. User Authentication and Authorization
 
-* *   **User Registration**: `POST /users`
-* *   **User Login**: `POST /users/login`
-* *   **JWT Token-Based Security**
-* *   **Password Recovery (optional)**
+*    **User Registration**: `POST /users`
+*    **User Login**: `POST /users/login`
+*    **JWT Token-Based Security**
+*    **Password Recovery (optional)**
 
 ### 2\. User Profile Management
 
-* *   **View Profile**: `GET /users/profile`
-*     
-* *   **Edit Profile**: `PATCH /users`
-*     
-* *   **Follow/Unfollow**: `PUT` / `DELETE /users/{userid}/follow`
-*     
-* *   **View Followers / Following**: `GET /users/{userid}/followers`, `GET /users/{userid}/followees`
-*     
-* *   **Update Profile Picture**: `PATCH /users/profile-picture`
-*     
+*    **View Profile**: `GET /users/profile`   
+*    **Edit Profile**: `PATCH /users` 
+*    **Follow/Unfollow**: `PUT` / `DELETE /users/{userid}/follow`
+*    **View Followers / Following**: `GET /users/{userid}/followers`, `GET /users/{userid}/followees`   
+* *   **Update Profile Picture**: `PATCH /users/profile-picture` 
 
 ### 3\. Tweet Management
 
-* *   **Create Tweet**: `POST /tweets`
-*     
-* *   **Edit Tweet**: `PATCH /tweets`
-*     
-* *   **Delete Tweet**: `DELETE /tweets/{tweetId}`
-*     
-* *   **Get Tweets**: `GET /tweets/{userId}`
-*     
-* *   **Like / Unlike Tweet**: `PUT` / `DELETE /tweets/{tweetId}/like`
-*     
-* *   **Comment**: `PUT /tweets/{tweetId}/comment`
-*     
-* *   **Delete Comment**: `DELETE /tweets/{tweetId}/comment/{commentId}`
-*     
+*    **Create Tweet**: `POST /tweets`
+*    **Edit Tweet**: `PATCH /tweets`
+*    **Delete Tweet**: `DELETE /tweets/{tweetId}`  
+*    **Get Tweets**: `GET /tweets/{userId}`   
+*    **Like / Unlike Tweet**: `PUT` / `DELETE /tweets/{tweetId}/like`   
+*    **Comment**: `PUT /tweets/{tweetId}/comment`   
+*    **Delete Comment**: `DELETE /tweets/{tweetId}/comment/{commentId}`   
 
 ### 4\. Search Functionality
 
-* *   **Search Tweets by Content/Hashtags** (TBD)
-*     
-* *   **Search Users by Username** (TBD)
-*     
+*    **Search Tweets by Content/Hashtags** (TBD)
+*    **Search Users by Username** (TBD) 
 
 * * *
 
