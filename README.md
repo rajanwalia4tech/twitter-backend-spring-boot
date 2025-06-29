@@ -136,6 +136,26 @@ CREATE TABLE comments (
 );
 ```
 
+#### `hashtags`
+```sql
+CREATE TABLE hashtags (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  tag VARCHAR(100) UNIQUE NOT NULL
+);
+```
+
+#### `tweet_hashtags`
+
+```sql
+CREATE TABLE tweet_hashtags (
+  tweet_id INT NOT NULL,
+  hashtag_id INT NOT NULL,
+  PRIMARY KEY (tweet_id, hashtag_id),
+  FOREIGN KEY (tweet_id) REFERENCES tweets(id) ON DELETE CASCADE,
+  FOREIGN KEY (hashtag_id) REFERENCES hashtags(id) ON DELETE CASCADE
+);
+```
+
 #### Indexes
 
 ```sql
@@ -393,6 +413,8 @@ CREATE INDEX idx_tweets_content ON tweets(content);
   "message": "Comment deleted"
 }
 ```
+
+
 
 * * *
 
