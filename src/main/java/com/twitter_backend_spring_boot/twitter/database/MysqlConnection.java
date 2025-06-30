@@ -1,5 +1,5 @@
 package com.twitter_backend_spring_boot.twitter.database;
-import com.twitter_backend_spring_boot.twitter.logging.InjectLogger;
+import com.twitter_backend_spring_boot.twitter.logger.InjectLogger;
 import jakarta.annotation.PostConstruct;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;

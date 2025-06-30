@@ -1,4 +1,4 @@
-package com.twitter_backend_spring_boot.twitter.logging;
+package com.twitter_backend_spring_boot.twitter.logger;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.BeansException;

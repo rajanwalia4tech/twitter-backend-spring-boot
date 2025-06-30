@@ -1,6 +1,6 @@
 package com.twitter_backend_spring_boot.twitter.exceptions;
 
-import com.twitter_backend_spring_boot.twitter.logging.InjectLogger;
+import com.twitter_backend_spring_boot.twitter.logger.InjectLogger;
 import jakarta.annotation.PostConstruct;
 import org.slf4j.Logger;
 import org.springframework.http.HttpStatus;

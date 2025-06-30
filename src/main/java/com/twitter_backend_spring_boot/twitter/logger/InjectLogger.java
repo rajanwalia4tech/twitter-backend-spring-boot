@@ -1,4 +1,4 @@
-package com.twitter_backend_spring_boot.twitter.logging;
+package com.twitter_backend_spring_boot.twitter.logger;
 import java.lang.annotation.*;
 
 @Target(ElementType.FIELD)
