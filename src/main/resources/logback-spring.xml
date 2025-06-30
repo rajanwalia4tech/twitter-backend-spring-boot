@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration scan="true">
+
+    <!-- Pattern with date/time, traceId from MDC, thread -->
+    <property name="BASE_PATTERN" value="%d{yyyy-MM-dd HH:mm:ss.SSS} [%X{traceId}] [%thread]"/>
+
+    <!-- Console appender with colors and special CRITICAL coloring -->
+    <appender name="Console" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <pattern>
+                ${BASE_PATTERN} %highlight(%-5level) %logger{36} - %replace(%msg){'\[CRITICAL\]', '%style([CRITICAL]){blue}'}%n
+            </pattern>
+        </encoder>
+    </appender>
+
+    <!-- Rolling file appender (hourly, no colors) -->
+    <appender name="RollingFile" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <file>logs/application.log</file>
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <!-- hourly rollover -->
+            <fileNamePattern>logs/application.%d{yyyy-MM-dd_HH}.log</fileNamePattern>
+            <!-- keep logs for 7 days -->
+            <maxHistory>168</maxHistory>
+        </rollingPolicy>
+        <encoder>
+            <pattern>${BASE_PATTERN} %-5level %logger{36} - %msg%n</pattern>
+        </encoder>
+    </appender>
+
+    <root level="info">
+        <appender-ref ref="Console"/>
+        <appender-ref ref="RollingFile"/>
+    </root>
+
+</configuration>
