@@ -11,8 +11,8 @@ public class OpenApiConfig {
     public OpenAPI twitterOpenAPI() {
         return new OpenAPI()
                 .info(new Info()
-                        .title("Twitter Backend API")
-                        .description("API documentation for Twitter backend system")
-                        .version("1.0"));
+                .title("Twitter Backend API")
+                .description("API documentation for Twitter backend system")
+                .version("1.0"));
     }
 }

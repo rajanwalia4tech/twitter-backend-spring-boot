@@ -8,7 +8,8 @@ import java.io.File;
 @Component
 public class LogDirInitializer {
 
-    private static final Logger log = LoggerFactory.getLogger(LogDirInitializer.class);
+    @InjectLogger
+    private Logger log;
     private static final String LOG_DIR = "logs/app";
 
     @PostConstruct

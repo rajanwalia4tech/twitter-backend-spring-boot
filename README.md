@@ -17,6 +17,11 @@ The Twitter Backend Project is an API built with Node.js and MySQL, designed to 
 
 * * *
 
+## 📄 Swagger API Document URL
+```
+http://localhost:{port}/swagger-ui/index.html
+```
+
 ## 🧩 Functional Requirements
 
 ### 1\. User Authentication and Authorization
